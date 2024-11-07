@@ -30,4 +30,24 @@ git branch
 
 7) Это команда для заливки вашего проекта на ваш репозиторий. После команды origin через пробел
 пишите название вашей ветки, оно отображается в вашем терминале в скобке (master), (main) или (что-то другое):
+
 git push origin master
+
+8) это команда для удаления ваших файлов из вашего проекта. после нужно снова сделать команду git add . и запушить:
+git rm --cached -r .idea
+
+
+9) git rebase -i HEAD~2 для удаления коммита
+drop 5fa5048fc55139edf861b47d20edbb309a7c186c Lesson 2.1
+pick afe65062afa959b0efbd409c17a3a620691d3faa Test 2
+
+git push --force origin master
+
+git rebase --edit-todo
+git rebase --continue
+
+rm -rf имя_папки
+
+
+10)
+
