@@ -37,12 +37,12 @@ git push origin master
 git rm --cached -r .idea
 
 
-9) git rebase -i HEAD~2 для удаления коммита
+9)  для удаления коммита
 drop 5fa5048fc55139edf861b47d20edbb309a7c186c Lesson 2.1
 pick afe65062afa959b0efbd409c17a3a620691d3faa Test 2
 
 git push --force origin master
-
+git rebase -i HEAD~2
 git rebase --edit-todo
 git rebase --continue
 
