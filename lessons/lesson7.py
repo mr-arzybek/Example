@@ -1,8 +1,9 @@
+
 # CRUD - Create, Read, Update, Delete
 
 import sqlite3
 
-connect = sqlite3.connect('users.db')
+connect = sqlite3.connect('UsersTest.db')
 cursor = connect.cursor()
 
 
@@ -23,9 +24,9 @@ def add_user(fio, age, hobby):
     print(f"Пользователь {fio} добавлен")
 
 
-# add_user("Вася Пупкин", 33, "плавание")
-# add_user("Oleg", 33, "плавание")
-# add_user("Igor", 33, "плавание")
+add_user("Вася Пупкин", 33, "плавание")
+add_user("Oleg", 33, "плавание")
+add_user("Igor", 33, "плавание")
 
 
 def get_all_users():
